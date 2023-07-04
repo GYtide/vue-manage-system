@@ -1,7 +1,7 @@
 <template>
 	<div class="login-wrap">
 		<div class="ms-login">
-			<div class="ms-title">后台管理系统</div>
+			<div class="ms-title">登录</div>
 			<el-form :model="param" :rules="rules" ref="login" label-width="0px" class="ms-content">
 				<el-form-item prop="username">
 					<el-input v-model="param.username" placeholder="username">
@@ -96,8 +96,8 @@ tags.clearTags();
 	width: 100%;
 	line-height: 50px;
 	text-align: center;
-	font-size: 20px;
-	color: #fff;
+	font-size: 30px;
+	color: #1b1818;
 	border-bottom: 1px solid #ddd;
 }
 .ms-login {

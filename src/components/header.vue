@@ -5,7 +5,9 @@
 			<el-icon v-if="sidebar.collapse"><Expand /></el-icon>
 			<el-icon v-else><Fold /></el-icon>
 		</div>
-		<div class="logo">后台管理系统</div>
+		<div class="logo">妈妈我全对
+			<img src="../assets/img/logo.png"/>
+		</div>
 		<div class="header-right">
 			<div class="header-user-con">
 				<!-- 消息中心 -->

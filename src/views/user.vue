@@ -15,12 +15,12 @@
 								<i class="el-icon-lx-camerafill"></i>
 							</span>
 						</div>
-						<div class="info-name">{{ name }}</div>
-						<div class="info-desc">不可能！我的代码怎么可能会有bug！</div>
+						<div class="info-name">{{ '李幻鹰' }}</div>
+						<div class="info-desc">妈妈再也不用担心我的学习啦！</div>
 					</div>
 				</el-card>
 			</el-col>
-			<el-col :span="12">
+			<!-- <el-col :span="12">
 				<el-card shadow="hover">
 					<template #header>
 						<div class="clearfix">
@@ -43,7 +43,7 @@
 						</el-form-item>
 					</el-form>
 				</el-card>
-			</el-col>
+			</el-col> -->
 		</el-row>
 		<el-dialog title="裁剪图片" v-model="dialogVisible" width="600px">
 			<vue-cropper
@@ -65,6 +65,7 @@
 				</span>
 			</template>
 		</el-dialog>
+		<vInfo/>
 	</div>
 </template>
 
@@ -73,6 +74,7 @@ import { reactive, ref } from 'vue';
 import VueCropper from 'vue-cropperjs';
 import 'cropperjs/dist/cropper.css';
 import avatar from '../assets/img/img.jpg';
+import vInfo from '../components/info.vue'
 
 const name = localStorage.getItem('ms_username');
 const form = reactive({

@@ -57,44 +57,44 @@ import { useRoute } from 'vue-router';
 
 const items = [
     {
+        icon: 'CoffeeCup',
+        index: '/hello',
+        title: '首页',
+        permiss: '1',
+    },
+    {
         icon: 'Odometer',
         index: '/dashboard',
-        title: '系统首页',
-        permiss: '1',
+        title: '个人主页',
+        permiss: '2',
     },
     {
         icon: 'Calendar',
         index: '1',
-        title: '表格相关',
-        permiss: '2',
+        title: '教师查询',
+        permiss: '3',
         subs: [
             {
                 index: '/table',
-                title: '常用表格',
-                permiss: '2',
+                title: '寻找老师',
+                permiss: '3',
             },
-            {
-                index: '/import',
-                title: '导入Excel',
-                permiss: '2',
-            },
-            {
-                index: '/export',
-                title: '导出Excel',
-                permiss: '2',
-            },
+            // {
+            //     index: '/import',
+            //     title: '导入Excel',
+            //     permiss: '3',
+            // },
+            // {
+            //     index: '/export',
+            //     title: '导出Excel',
+            //     permiss: '3',
+            // },
         ],
-    },
-    {
-        icon: 'DocumentCopy',
-        index: '/tabs',
-        title: 'tab选项卡',
-        permiss: '3',
     },
     {
         icon: 'Edit',
         index: '3',
-        title: '表单相关',
+        title: '我的订单',
         permiss: '4',
         subs: [
             {
@@ -127,29 +127,11 @@ const items = [
         ],
     },
     {
-        icon: 'Setting',
-        index: '/icon',
-        title: '自定义图标',
-        permiss: '10',
-    },
-    {
-        icon: 'PieChart',
-        index: '/charts',
-        title: 'schart图表',
-        permiss: '11',
-    },
-    {
         icon: 'Warning',
         index: '/permission',
-        title: '权限管理',
-        permiss: '13',
-    },
-    {
-        icon: 'CoffeeCup',
-        index: '/donate',
-        title: '支持作者',
-        permiss: '14',
-    },
+        title: '信息管理',
+        permiss: '5',
+    }
 ];
 
 const route = useRoute();

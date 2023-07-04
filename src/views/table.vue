@@ -2,7 +2,7 @@
 	<div>
 		<div class="container">
 			<div class="handle-box">
-				<el-select v-model="query.address" placeholder="地址" class="handle-select mr10">
+				<el-select v-model="query.address" placeholder="科目" class="handle-select mr10">
 					<el-option key="1" label="广东省" value="广东省"></el-option>
 					<el-option key="2" label="湖南省" value="湖南省"></el-option>
 				</el-select>
@@ -20,7 +20,7 @@
 					<template #default="scope">
 						<el-image
 							class="table-td-thumb"
-							:src="scope.row.thumb"
+							src="../assets/img/img.jpg"
 							:z-index="10"
 							:preview-src-list="[scope.row.thumb]"
 							preview-teleported

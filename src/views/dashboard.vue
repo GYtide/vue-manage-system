@@ -6,36 +6,37 @@
 					<div class="user-info">
 						<el-avatar :size="120" :src="imgurl" />
 						<div class="user-info-cont">
-							<div class="user-info-name">{{ name }}</div>
+							<div class="user-info-name">{{ '李幻鹰' }}</div>
 							<div>{{ role }}</div>
 						</div>
 					</div>
 					<div class="user-info-list">
 						上次登录时间：
-						<span>2022-10-01</span>
+						<span>2023-07-04</span>
 					</div>
 					<div class="user-info-list">
 						上次登录地点：
-						<span>东莞</span>
+						<span>知行南楼506</span>
 					</div>
 				</el-card>
 				<el-card shadow="hover" style="height: 252px">
 					<template #header>
 						<div class="clearfix">
-							<span>语言详情</span>
+							<span>我的标签</span>
 						</div>
 					</template>
-					Vue
+					<!-- Vue
 					<el-progress :percentage="79.4" color="#42b983"></el-progress>
 					TypeScript
 					<el-progress :percentage="14" color="#f1e05a"></el-progress>
 					CSS
 					<el-progress :percentage="5.6"></el-progress>
 					HTML
-					<el-progress :percentage="1" color="#f56c6c"></el-progress>
+					<el-progress :percentage="1" color="#f56c6c"></el-progress> -->
 				</el-card>
 			</el-col>
 			<el-col :span="16">
+
 				<el-row :gutter="20" class="mgb20">
 					<el-col :span="8">
 						<el-card shadow="hover" :body-style="{ padding: '0px' }">
@@ -101,7 +102,7 @@
 				</el-card>
 			</el-col>
 		</el-row>
-		<el-row :gutter="20">
+		<!-- <el-row :gutter="20">
 			<el-col :span="12">
 				<el-card shadow="hover">
 					<schart ref="bar" class="schart" canvasId="bar" :options="options"></schart>
@@ -112,7 +113,7 @@
 					<schart ref="line" class="schart" canvasId="line" :options="options2"></schart>
 				</el-card>
 			</el-col>
-		</el-row>
+		</el-row> -->
 	</div>
 </template>
 
@@ -121,8 +122,9 @@ import Schart from 'vue-schart';
 import { reactive } from 'vue';
 import imgurl from '../assets/img/img.jpg';
 
+
 const name = localStorage.getItem('ms_username');
-const role: string = name === 'admin' ? '超级管理员' : '普通用户';
+const role: string = name === 'admin' ? '管理员' : '普通用户';
 
 const options = {
 	type: 'bar',
@@ -169,28 +171,28 @@ const options2 = {
 };
 const todoList = reactive([
 	{
-		title: '今天要修复100个bug',
+		title: '妈妈再也不用担心我的学习！',
 		status: false
 	},
 	{
-		title: '今天要修复100个bug',
+		title: '妈妈再也不用担心我的学习！',
 		status: false
 	},
 	{
-		title: '今天要写100行代码加几个bug吧',
+		title: '妈妈再也不用担心我的学习！',
 		status: false
 	},
 	{
-		title: '今天要修复100个bug',
+		title: '妈妈再也不用担心我的学习！',
 		status: false
 	},
 	{
-		title: '今天要修复100个bug',
-		status: true
+		title: '妈妈再也不用担心我的学习！',
+		status: false
 	},
 	{
-		title: '今天要写100行代码加几个bug吧',
-		status: true
+		title: '妈妈再也不用担心我的学习！',
+		status: false
 	}
 ]);
 </script>
@@ -282,7 +284,7 @@ const todoList = reactive([
 }
 
 .mgb20 {
-	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 .todo-item {
